@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinhchunhat</title>
+</head>
+<body>
+<script>
+    class hcn {
+        constructor(dai, rong){
+            this.dai=dai;
+            this.rong=rong;
+        }
+        getP(){
+            return (this.dai + this.rong) * 2;
+        }
+        getS(){
+            return this.dai * this.rong;
+        }
+    }
+    let laptop = new hcn(4, 3);
+    let c = laptop.getP();
+    let s = laptop.getS();
+    document.write(c , s)
+</script>
+</body>
+</html>

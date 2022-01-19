@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinhtron</title>
+</head>
+<body>
+<script>
+    let circle = function (radius){
+        this.radius= radius;
+        this.getRadius  = function(){
+            return radius;
+        }
+        this.getArea = function(){
+            return Math.PI * radius * radius;
+        }
+    };
+    let tron = new circle(2);
+    let r = tron.getRadius();
+    let s = tron.getArea();
+    alert("ban kinh " + r + "dien tich " + s );
+</script>
+</body>
+</html>
